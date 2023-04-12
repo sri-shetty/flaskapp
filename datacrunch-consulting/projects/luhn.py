@@ -14,11 +14,12 @@ luhn = Blueprint("luhn", "luhn")
 @luhn.route("/projects/luhn/<cardNo>", strict_slashes=False)
 
 def checkLuhn(cardNo):
-     
+    
     nDigits = len(cardNo)
     nSum = 0
     isSecond = False
-     
+    
+    # This comment can be deleted
     for i in range(nDigits - 1, -1, -1):
         d = ord(cardNo[i]) - ord('0')
      
