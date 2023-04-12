@@ -29,4 +29,4 @@ def getPrime(n):
 
     end = time.time()
 
-    return f"{a-1} is prime number #{n}. Calculated in {end-start} seconds."
+    return f"{a-1} is a prime number #{n}. Calculated in {end-start} seconds."
